@@ -25,3 +25,6 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# Local-only private posts (never pushed to GitHub)
+_private/

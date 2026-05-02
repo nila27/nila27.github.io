@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsPerformanceRecorder Version="1.0" Author="virtualdisk-bench" Comments="VHDMP-focused minimal profile">
+  <Profiles>
+    <SystemCollector Id="SC_VirtualDisk" Name="NT Kernel Logger">
+      <BufferSize Value="256"/>
+      <Buffers Value="64"/>
+    </SystemCollector>
+    <EventCollector Id="EC_VirtualDisk" Name="VirtualDisk Event Collector">
+      <BufferSize Value="256"/>
+      <Buffers Value="64"/>
+    </EventCollector>
+    <SystemProvider Id="SP_VirtualDisk">
+      <Keywords Operation="Add">
+        <Keyword Value="ProcessThread"/>
+        <Keyword Value="Loader"/>
+        <Keyword Value="DiskIO"/>
+        <Keyword Value="FileIO"/>
+      </Keywords>
+    </SystemProvider>
+    <EventProvider Id="EP_VHDMP" Name="e2816346-87f4-4f85-95c3-0c79409aa89d" Level="5">
+      <Keywords>
+        <Keyword Value="0xFFFFFFFFFFFFFFFF"/>
+      </Keywords>
+    </EventProvider>
+    <Profile Id="VirtualDisk.Verbose.File" Name="VirtualDisk" Description="VHDMP minimal" LoggingMode="File" DetailLevel="Verbose">
+      <Collectors Operation="Add">
+        <SystemCollectorId Value="SC_VirtualDisk">
+          <SystemProviderId Value="SP_VirtualDisk"/>
+        </SystemCollectorId>
+        <EventCollectorId Value="EC_VirtualDisk">
+          <EventProviders Operation="Add">
+            <EventProviderId Value="EP_VHDMP"/>
+          </EventProviders>
+        </EventCollectorId>
+      </Collectors>
+    </Profile>
+    <Profile Id="VirtualDisk.Verbose.Memory" Name="VirtualDisk" Description="VHDMP minimal (memory mode)" LoggingMode="Memory" DetailLevel="Verbose" Base="VirtualDisk.Verbose.File"/>
+  </Profiles>
+</WindowsPerformanceRecorder>

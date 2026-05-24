@@ -1,0 +1,98 @@
+kd> uf /c obopenobjectbynameex
+nt!ObOpenObjectByNameEx (fffff804`8069bb40)
+  nt!ObOpenObjectByNameEx+0x8a (fffff804`8069bbca):
+    call to nt!ExpInterlockedPopEntrySList (fffff804`804b3890)
+  nt!ObOpenObjectByNameEx+0xa7 (fffff804`8069bbe7):
+    call to nt!ExpInterlockedPopEntrySList (fffff804`804b3890)
+  nt!ObOpenObjectByNameEx+0xc5 (fffff804`8069bc05):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObOpenObjectByNameEx+0x103 (fffff804`8069bc43):
+    call to nt!ObpCaptureObjectCreateInformation (fffff804`8069cca0)
+  nt!ObOpenObjectByNameEx+0x15c (fffff804`8069bc9c):
+    call to nt!PsReferencePrimaryTokenWithTag (fffff804`8013fff0)
+  nt!ObOpenObjectByNameEx+0x18d (fffff804`8069bccd):
+    call to nt!SepCreateAccessStateFromSubjectContext (fffff804`801ebc80)
+  nt!ObOpenObjectByNameEx+0x21e (fffff804`8069bd5e):
+    call to nt!ObpLookupObjectName (fffff804`8069d210)
+  nt!ObOpenObjectByNameEx+0x250 (fffff804`8069bd90):
+    call to nt!ObfReferenceObject (fffff804`8013fa90)
+  nt!ObOpenObjectByNameEx+0x2b7 (fffff804`8069bdf7):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObOpenObjectByNameEx+0x2ca (fffff804`8069be0a):
+    call to nt!ObDereferenceObjectDeferDeleteWithTag (fffff804`8005e950)
+  nt!ObOpenObjectByNameEx+0x2e6 (fffff804`8069be26):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObOpenObjectByNameEx+0x318 (fffff804`8069be58):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObOpenObjectByNameEx+0x34b (fffff804`8069be8b):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!ObOpenObjectByNameEx+0x3bc (fffff804`8069befc):
+    call to nt!SeSetLearningModeObjectInformation (fffff804`802bbe8c)
+  nt!ObOpenObjectByNameEx+0x40e (fffff804`8069bf4e):
+    call to nt!ObpCreateHandle (fffff804`8064daa0)
+  nt!ObOpenObjectByNameEx+0x45a (fffff804`8069bf9a):
+    call to nt!ObpDeleteNameCheck (fffff804`8069b690)
+  nt!ObOpenObjectByNameEx+0x463 (fffff804`8069bfa3):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!ObOpenObjectByNameEx+0x474 (fffff804`8069bfb4):
+    call to nt!SepDeleteAccessState (fffff804`80201610)
+  nt!ObOpenObjectByNameEx+0x4e0 (fffff804`8069c020):
+    call to nt!ObpPushStackInfo (fffff804`801407ac)
+  nt!ObOpenObjectByNameEx+0x513 (fffff804`8069c053):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObOpenObjectByNameEx+0x55a (fffff804`8069c09a):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!ObOpenObjectByNameEx+0x566 (fffff804`8069c0a6):
+    call to nt!SeClearLearningModeObjectInformation (fffff804`80208fe0)
+  nt!ObOpenObjectByNameEx+0x58e (fffff804`8069c0ce):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!ObOpenObjectByNameEx+0x5e9 (fffff804`8069c129):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObOpenObjectByNameEx+0x60e (fffff804`8069c14e):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObOpenObjectByNameEx+0x63d (fffff804`8069c17d):
+    call to nt!ObfReferenceObjectWithTag (fffff804`801403e0)
+  nt!ObOpenObjectByNameEx+0x668 (fffff804`8069c1a8):
+    call to nt!ExfReleasePushLockShared (fffff804`8005de00)
+  nt!ObOpenObjectByNameEx+0x67d (fffff804`8069c1bd):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObOpenObjectByNameEx+0x6a3 (fffff804`8069c1e3):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObOpenObjectByNameEx+0x6d6 (fffff804`8069c216):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!ObOpenObjectByNameEx+0x6f9 (fffff804`8069c239):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObOpenObjectByNameEx+0x706 (fffff804`8069c246):
+    call to nt!RtlValidSecurityDescriptor (fffff804`80667870)
+  nt!ObOpenObjectByNameEx+0x72e (fffff804`8069c26e):
+    call to nt!SeObjectCreateSaclAccessBits (fffff804`806692bc)
+  nt!ObOpenObjectByNameEx+0x73f (fffff804`8069c27f):
+    call to nt!ExfReleasePushLock (fffff804`8005e260)
+  nt!ObOpenObjectByNameEx+0x749 (fffff804`8069c289):
+    call to nt!HalPutDmaAdapter (fffff804`802833b0)
+  nt!ObOpenObjectByNameEx+0x786 (fffff804`8069c2c6):
+    call to nt!ExFreePool (fffff804`80972cb0)
+  nt!ObOpenObjectByNameEx+0x7c4 (fffff804`8069c304):
+    call to nt!ExFreePool (fffff804`80972cb0)
+  nt!ObOpenObjectByNameEx+0x802 (fffff804`8069c342):
+    call to nt!ExFreePool (fffff804`80972cb0)
+  nt!ObOpenObjectByNameEx+0x85e (fffff804`8069c39e):
+    call to nt!ExFreePool (fffff804`80972cb0)
+  nt!ObOpenObjectByNameEx+0x882 (fffff804`8069c3c2):
+    call to nt!ObpPushStackInfo (fffff804`801407ac)
+  nt!ObOpenObjectByNameEx+0x89a (fffff804`8069c3da):
+    call to nt!ObpPushStackInfo (fffff804`801407ac)
+  nt!ObOpenObjectByNameEx+0x8b8 (fffff804`8069c3f8):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObOpenObjectByNameEx+0x972 (fffff804`8069c4b2):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObOpenObjectByNameEx+0x987 (fffff804`8069c4c7):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObOpenObjectByNameEx+0x991 (fffff804`8069c4d1):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObOpenObjectByNameEx+0x99b (fffff804`8069c4db):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObOpenObjectByNameEx+0x26e495 (fffff804`80909fd5):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObOpenObjectByNameEx+0x26e49e (fffff804`80909fde):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)

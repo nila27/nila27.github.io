@@ -1,7 +1,7 @@
 ---
 title: "vhdmp.sys 추적: WPR 세션이 VHDMP 이벤트를 0개 잡는 이유"
 date: 2026-05-02 19:00:00 +0900
-categories: [Cloud Storage, Hyper-V Disk]
+categories: [Windows Analyze, FileSystem]
 tags: [etw, wpr, vhdmp, kernel, debugging]
 lang: ko-KR
 ---

@@ -1,0 +1,122 @@
+kd> uf /c nt!iopcreatefile
+nt!IopCreateFile (fffff804`8076cd60)
+  nt!IopCreateFile+0x9a (fffff804`8076cdfa):
+    call to nt!ExpInterlockedPopEntrySList (fffff804`804b3890)
+  nt!IopCreateFile+0xbc (fffff804`8076ce1c):
+    call to nt!ExpInterlockedPopEntrySList (fffff804`804b3890)
+  nt!IopCreateFile+0xdf (fffff804`8076ce3f):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopCreateFile+0x23b (fffff804`8076cf9b):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopCreateFile+0x24d (fffff804`8076cfad):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!IopCreateFile+0x2f1 (fffff804`8076d051):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopCreateFile+0x40f (fffff804`8076d16f):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopCreateFile+0x419 (fffff804`8076d179):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!IopCreateFile+0x4e1 (fffff804`8076d241):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopCreateFile+0x4eb (fffff804`8076d24b):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!IopCreateFile+0x5ba (fffff804`8076d31a):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopCreateFile+0x5c4 (fffff804`8076d324):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!IopCreateFile+0x712 (fffff804`8076d472):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!IopCreateFile+0x728 (fffff804`8076d488):
+    call to nt!memcpy (fffff804`804bfc40)
+  nt!IopCreateFile+0x740 (fffff804`8076d4a0):
+    call to nt!IoCheckEaBufferValidity (fffff804`80820a20)
+  nt!IopCreateFile+0x92f (fffff804`8076d68f):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!IopCreateFile+0x979 (fffff804`8076d6d9):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopCreateFile+0x99a (fffff804`8076d6fa):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!IopCreateFile+0x9ad (fffff804`8076d70d):
+    call to nt!memcpy (fffff804`804bfc40)
+  nt!IopCreateFile+0x9c4 (fffff804`8076d724):
+    call to nt!IoCheckEaBufferValidity (fffff804`80820a20)
+  nt!IopCreateFile+0x9d9 (fffff804`8076d739):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopCreateFile+0xa1d (fffff804`8076d77d):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopCreateFile+0xa2e (fffff804`8076d78e):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!IopCreateFile+0xb23 (fffff804`8076d883):
+    call to nt!memcpy (fffff804`804bfc40)
+  nt!IopCreateFile+0xb31 (fffff804`8076d891):
+    call to nt!Feature_FsRtlpCleanupEcpsOplockKeysFix__private_IsEnabledDeviceUsageNoInline (fffff804`803967d4)
+  nt!IopCreateFile+0xb5b (fffff804`8076d8bb):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!IopCreateFile+0xc68 (fffff804`8076d9c8):
+    call to nt!ExAllocateFromPagedLookasideList (fffff804`801fa0e0)
+  nt!IopCreateFile+0xd34 (fffff804`8076da94):
+    call to nt!IopCleanupExtraCreateParameters (fffff804`806a2540)
+  nt!IopCreateFile+0xd41 (fffff804`8076daa1):
+    call to nt!FsRtlFreeExtraCreateParameter (fffff804`806a2a00)
+  nt!IopCreateFile+0xd51 (fffff804`8076dab1):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopCreateFile+0xd6e (fffff804`8076dace):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!IopCreateFile+0xe7d (fffff804`8076dbdd):
+    call to nt!ExAllocateFromPagedLookasideList (fffff804`801fa0e0)
+  nt!IopCreateFile+0xf50 (fffff804`8076dcb0):
+    call to nt!FsRtlpPrepareExtraCreateParametersForCreate (fffff804`8076e0b0)
+  nt!IopCreateFile+0xf6d (fffff804`8076dccd):
+    call to nt!FsRtlFreeExtraCreateParameterList (fffff804`806a26c0)
+  nt!IopCreateFile+0xfc4 (fffff804`8076dd24):
+    call to nt!PsGetCurrentSilo (fffff804`80202420)
+  nt!IopCreateFile+0x1033 (fffff804`8076dd93):
+    call to nt!ObOpenObjectByNameEx (fffff804`8069bb40)
+  nt!IopCreateFile+0x1049 (fffff804`8076dda9):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopCreateFile+0x104e (fffff804`8076ddae):
+    call to nt!Feature_FsRtlpCleanupEcpsOplockKeysFix__private_IsEnabledDeviceUsageNoInline (fffff804`803967d4)
+  nt!IopCreateFile+0x1061 (fffff804`8076ddc1):
+    call to nt!FsRtlFreeExtraCreateParameterList (fffff804`806a26c0)
+  nt!IopCreateFile+0x1076 (fffff804`8076ddd6):
+    call to nt!IopCleanupExtraCreateParameters (fffff804`806a2540)
+  nt!IopCreateFile+0x1107 (fffff804`8076de67):
+    call to nt!ObCloseHandle (fffff804`806a2b10)
+  nt!IopCreateFile+0x118a (fffff804`8076deea):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopCreateFile+0x119d (fffff804`8076defd):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopCreateFile+0x11bb (fffff804`8076df1b):
+    call to nt!IopCloseFile (fffff804`80642070)
+  nt!IopCreateFile+0x1212 (fffff804`8076df72):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopCreateFile+0x121f (fffff804`8076df7f):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`804b38d0)
+  nt!IopCreateFile+0x122e (fffff804`8076df8e):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`8069b1f0)
+  nt!IopCreateFile+0x1238 (fffff804`8076df98):
+    call to nt!RtlRaiseStatus (fffff804`80080b30)
+  nt!IopCreateFile+0x123e (fffff804`8076df9e):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`8069b1f0)
+  nt!IopCreateFile+0x1243 (fffff804`8076dfa3):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`8069b1f0)
+  nt!IopCreateFile+0x1248 (fffff804`8076dfa8):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`8069b1f0)
+  nt!IopCreateFile+0x124d (fffff804`8076dfad):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`8069b1f0)
+  nt!IopCreateFile+0x1253 (fffff804`8076dfb3):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`8069b1f0)
+  nt!IopCreateFile+0x1261 (fffff804`8076dfc1):
+    call to nt!RtlRaiseStatus (fffff804`80080b30)
+  nt!IopGetBasicInformationFile+0x20 (fffff804`8076dff0):
+    call to nt!IoGetRelatedDeviceObject (fffff804`80173c70)
+  nt!IopGetBasicInformationFile+0x66 (fffff804`8076e036):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopGetBasicInformationFile+0xa9 (fffff804`8076e079):
+    call to nt!IopGetFileInformation (fffff804`8076e140)
+  nt!IopGetBasicInformationFile+0xb3 (fffff804`8076e083):
+    call to nt!MmIsDriverVerifying (fffff804`8029e430)
+  nt!IopGetBasicInformationFile+0xbf (fffff804`8076e08f):
+    call to nt!VfFastIoSnapState (fffff804`809a97cc)
+  nt!IopGetBasicInformationFile+0xcf (fffff804`8076e09f):
+    call to nt!VfFastIoCheckState (fffff804`809a9450)

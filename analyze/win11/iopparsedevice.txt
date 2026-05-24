@@ -1,0 +1,348 @@
+kd> uf /c nt!iopparsedevice
+nt!IopParseDevice (fffff804`8069f880)
+  nt!IopParseDevice+0x124 (fffff804`8069f9a4):
+    call to nt!RtlInitUnicodeString (fffff804`802241a0)
+  nt!IopParseDevice+0x1b6 (fffff804`8069fa36):
+    call to nt!IopCheckDeviceAndDriver (fffff804`800d4bf0)
+  nt!IopParseDevice+0x27f (fffff804`8069faff):
+    call to nt!IopCheckBackupRestorePrivilege (fffff804`806a1c40)
+  nt!IopParseDevice+0x304 (fffff804`8069fb84):
+    call to nt!SeIsAppContainerOrIdentifyLevelContext (fffff804`80814eac)
+  nt!IopParseDevice+0x3bd (fffff804`8069fc3d):
+    call to nt!IopCheckVpbMounted (fffff804`801f1ef0)
+  nt!IopParseDevice+0x3f9 (fffff804`8069fc79):
+    call to nt!IoGetAttachedDevice (fffff804`801c4fc0)
+  nt!IopParseDevice+0x43e (fffff804`8069fcbe):
+    call to nt!SeIsAppContainerOrIdentifyLevelContext (fffff804`80814eac)
+  nt!IopParseDevice+0x493 (fffff804`8069fd13):
+    call to nt!IopAllocateIrpExReturn (fffff804`80053dc0)
+  nt!IopParseDevice+0x5f5 (fffff804`8069fe75):
+    call to nt!IopAllocRealFileObject (fffff804`8069a9b0)
+  nt!IopParseDevice+0x684 (fffff804`8069ff04):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!IopParseDevice+0x6a2 (fffff804`8069ff22):
+    call to nt!RtlCopyUnicodeString (fffff804`801ffe80)
+  nt!IopParseDevice+0x6f6 (fffff804`8069ff76):
+    call to nt!KeInitializeEvent (fffff804`80209d80)
+  nt!IopParseDevice+0x70b (fffff804`8069ff8b):
+    call to nt!IopQueueThreadIrp (fffff804`80053c60)
+  nt!IopParseDevice+0x736 (fffff804`8069ffb6):
+    call to nt!IofCallDriver (fffff804`80174160)
+  nt!IopParseDevice+0x7b2 (fffff804`806a0032):
+    call to nt!IopSymlinkPropagateToExtensionIfNeeded (fffff804`806a2820)
+  nt!IopParseDevice+0x80c (fffff804`806a008c):
+    call to nt!IopDequeueIrpFromThread (fffff804`800541c0)
+  nt!IopParseDevice+0x823 (fffff804`806a00a3):
+    call to nt!IoFreeIrp (fffff804`8011a520)
+  nt!IopParseDevice+0x84e (fffff804`806a00ce):
+    call to nt!IoGetRelatedDeviceObject (fffff804`80173c70)
+  nt!IopParseDevice+0x87f (fffff804`806a00ff):
+    call to nt!ObfReferenceObject (fffff804`8013fa90)
+  nt!IopParseDevice+0x929 (fffff804`806a01a9):
+    call to nt!SeUnlockSubjectContext (fffff804`806684d0)
+  nt!IopParseDevice+0x943 (fffff804`806a01c3):
+    call to nt!IopSetFileObjectExtensionFlag (fffff804`80234650)
+  nt!IopParseDevice+0xa16 (fffff804`806a0296):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopParseDevice+0xa44 (fffff804`806a02c4):
+    call to nt!VfFastIoCheckState (fffff804`809a9450)
+  nt!IopParseDevice+0xa59 (fffff804`806a02d9):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!IopParseDevice+0xa93 (fffff804`806a0313):
+    call to nt!IopQueryXxxInformation (fffff804`8076a530)
+  nt!IopParseDevice+0xaaf (fffff804`806a032f):
+    call to nt!memcpy (fffff804`804bfc40)
+  nt!IopParseDevice+0xab9 (fffff804`806a0339):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0xac3 (fffff804`806a0343):
+    call to nt!MmIsDriverVerifying (fffff804`8029e430)
+  nt!IopParseDevice+0xad3 (fffff804`806a0353):
+    call to nt!VfFastIoSnapState (fffff804`809a97cc)
+  nt!IopParseDevice+0xb2e (fffff804`806a03ae):
+    call to nt!IopCloseFile (fffff804`80642070)
+  nt!IopParseDevice+0xb36 (fffff804`806a03b6):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopParseDevice+0xb5c (fffff804`806a03dc):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopParseDevice+0xba1 (fffff804`806a0421):
+    call to nt!IopQueryInformation (fffff804`807d4f90)
+  nt!IopParseDevice+0xbbd (fffff804`806a043d):
+    call to nt!PsGetCurrentServerSiloGlobals (fffff804`80147d10)
+  nt!IopParseDevice+0xbe7 (fffff804`806a0467):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0xbf2 (fffff804`806a0472):
+    call to nt!RtlInitUnicodeString (fffff804`802241a0)
+  nt!IopParseDevice+0xc2b (fffff804`806a04ab):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!IopParseDevice+0xc44 (fffff804`806a04c4):
+    call to nt!RtlCopyUnicodeString (fffff804`801ffe80)
+  nt!IopParseDevice+0xc94 (fffff804`806a0514):
+    call to nt!IopAllocRealFileObject (fffff804`8069a9b0)
+  nt!IopParseDevice+0xccf (fffff804`806a054f):
+    call to nt!_memset_spec_ermsb (fffff804`804c0940)
+  nt!IopParseDevice+0xd45 (fffff804`806a05c5):
+    call to nt!IopRetrieveTransactionParametersFromOpenPacket (fffff804`80813e40)
+  nt!IopParseDevice+0xd87 (fffff804`806a0607):
+    call to nt!IopRetrieveTransactionParameters (fffff804`80699830)
+  nt!IopParseDevice+0xda4 (fffff804`806a0624):
+    call to nt!PsIsHostSilo (fffff804`8023e2e0)
+  nt!IopParseDevice+0xdba (fffff804`806a063a):
+    call to nt!IoGetSilo (fffff804`80231ac0)
+  nt!IopParseDevice+0xdc2 (fffff804`806a0642):
+    call to nt!PsIsHostSilo (fffff804`8023e2e0)
+  nt!IopParseDevice+0xdfe (fffff804`806a067e):
+    call to nt!PsIsHostSilo (fffff804`8023e2e0)
+  nt!IopParseDevice+0xe13 (fffff804`806a0693):
+    call to nt!PsAcquireSiloHardReference (fffff804`8025e580)
+  nt!IopParseDevice+0xe45 (fffff804`806a06c5):
+    call to nt!IopGetSetSpecificExtension (fffff804`80226ed0)
+  nt!IopParseDevice+0xe84 (fffff804`806a0704):
+    call to nt!ObfReferenceObjectWithTag (fffff804`801403e0)
+  nt!IopParseDevice+0xf5d (fffff804`806a07dd):
+    call to nt!IopCreateSecurityCheck (fffff804`8026da5c)
+  nt!IopParseDevice+0xf72 (fffff804`806a07f2):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0xf7f (fffff804`806a07ff):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0xfaa (fffff804`806a082a):
+    call to nt!IopCheckTopDeviceHint (fffff804`807e3a30)
+  nt!IopParseDevice+0x1008 (fffff804`806a0888):
+    call to nt!IopSymlinkGetECP (fffff804`802513d8)
+  nt!IopParseDevice+0x1020 (fffff804`806a08a0):
+    call to nt!IopSymlinkGetMostRecentlyUsedName (fffff804`80277f50)
+  nt!IopParseDevice+0x1062 (fffff804`806a08e2):
+    call to nt!IopSymlinkUpdateECP (fffff804`8079dacc)
+  nt!IopParseDevice+0x10cd (fffff804`806a094d):
+    call to nt!ExAcquireResourceSharedLite (fffff804`80141e80)
+  nt!IopParseDevice+0x10d6 (fffff804`806a0956):
+    call to nt!SeLockSubjectContext (fffff804`80668470)
+  nt!IopParseDevice+0x1144 (fffff804`806a09c4):
+    call to nt!SeAccessCheck (fffff804`8015a5b0)
+  nt!IopParseDevice+0x11c2 (fffff804`806a0a42):
+    call to nt!SeOpenObjectAuditAlarmWithTransaction (fffff804`806508e0)
+  nt!IopParseDevice+0x11ce (fffff804`806a0a4e):
+    call to nt!ExReleaseResourceLite (fffff804`8005a450)
+  nt!IopParseDevice+0x11db (fffff804`806a0a5b):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!IopParseDevice+0x11f2 (fffff804`806a0a72):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0x1203 (fffff804`806a0a83):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopParseDevice+0x1212 (fffff804`806a0a92):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x122b (fffff804`806a0aab):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x1238 (fffff804`806a0ab8):
+    call to nt!IoFreeIrp (fffff804`8011a520)
+  nt!IopParseDevice+0x1245 (fffff804`806a0ac5):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x125a (fffff804`806a0ada):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x1270 (fffff804`806a0af0):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopParseDevice+0x12be (fffff804`806a0b3e):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!IopParseDevice+0x1300 (fffff804`806a0b80):
+    call to nt!IopQueryXxxInformation (fffff804`8076a530)
+  nt!IopParseDevice+0x131a (fffff804`806a0b9a):
+    call to nt!IopGetNetworkOpenInformation (fffff804`808afffc)
+  nt!IopParseDevice+0x132e (fffff804`806a0bae):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x134e (fffff804`806a0bce):
+    call to nt!memcmp (fffff804`804bff10)
+  nt!IopParseDevice+0x13c9 (fffff804`806a0c49):
+    call to nt!IopIncrementVpbRefCount (fffff804`800d5430)
+  nt!IopParseDevice+0x1428 (fffff804`806a0ca8):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0x1430 (fffff804`806a0cb0):
+    call to nt!IopDeleteFileObjectExtension (fffff804`801c3010)
+  nt!IopParseDevice+0x143f (fffff804`806a0cbf):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x1454 (fffff804`806a0cd4):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x145c (fffff804`806a0cdc):
+    call to nt!IoFreeIrp (fffff804`8011a520)
+  nt!IopParseDevice+0x14b4 (fffff804`806a0d34):
+    call to nt!KeWaitForSingleObject (fffff804`8013e960)
+  nt!IopParseDevice+0x14f6 (fffff804`806a0d76):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x1503 (fffff804`806a0d83):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x1545 (fffff804`806a0dc5):
+    call to nt!IopQueryXxxInformation (fffff804`8076a530)
+  nt!IopParseDevice+0x1556 (fffff804`806a0dd6):
+    call to nt!IoFreeIrp (fffff804`8011a520)
+  nt!IopParseDevice+0x1565 (fffff804`806a0de5):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x157e (fffff804`806a0dfe):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x159b (fffff804`806a0e1b):
+    call to nt!IoCancelFileOpen (fffff804`804f9e00)
+  nt!IopParseDevice+0x15c3 (fffff804`806a0e43):
+    call to nt!SeAppendPrivileges (fffff804`807d2470)
+  nt!IopParseDevice+0x15d0 (fffff804`806a0e50):
+    call to nt!CmSiFreeMemory (fffff804`8026b8d0)
+  nt!IopParseDevice+0x15ef (fffff804`806a0e6f):
+    call to nt!PsReleaseSiloHardReference (fffff804`801c4750)
+  nt!IopParseDevice+0x1634 (fffff804`806a0eb4):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!IopParseDevice+0x1658 (fffff804`806a0ed8):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0x1680 (fffff804`806a0f00):
+    call to nt!RtlCopyUnicodeString (fffff804`801ffe80)
+  nt!IopParseDevice+0x16b2 (fffff804`806a0f32):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0x16c3 (fffff804`806a0f43):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopParseDevice+0x16d9 (fffff804`806a0f59):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x16ee (fffff804`806a0f6e):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x17c5 (fffff804`806a1045):
+    call to nt!PsGetParentSilo (fffff804`80859700)
+  nt!IopParseDevice+0x17de (fffff804`806a105e):
+    call to nt!VfFastIoCheckState (fffff804`809a9450)
+  nt!IopParseDevice+0x17eb (fffff804`806a106b):
+    call to nt!IoFreeIrp (fffff804`8011a520)
+  nt!IopParseDevice+0x17fa (fffff804`806a107a):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x18b4 (fffff804`806a1134):
+    call to nt!IopCreateSecurityCheck (fffff804`8026da5c)
+  nt!IopParseDevice+0x192e (fffff804`806a11ae):
+    call to nt!KiLowerIrqlProcessIrqlFlags (fffff804`802f4f48)
+  nt!IopParseDevice+0x1992 (fffff804`806a1212):
+    call to nt!IopSymlinkGetECP (fffff804`802513d8)
+  nt!IopParseDevice+0x19cc (fffff804`806a124c):
+    call to nt!IopSymlinkCreateECP (fffff804`8079dd9c)
+  nt!IopParseDevice+0x1a44 (fffff804`806a12c4):
+    call to nt!IopSymlinkProcessReparse (fffff804`8079d29c)
+  nt!IopParseDevice+0x1b20 (fffff804`806a13a0):
+    call to nt!ExAcquireResourceSharedLite (fffff804`80141e80)
+  nt!IopParseDevice+0x1b29 (fffff804`806a13a9):
+    call to nt!SeLockSubjectContext (fffff804`80668470)
+  nt!IopParseDevice+0x1b82 (fffff804`806a1402):
+    call to nt!SeAccessCheck (fffff804`8015a5b0)
+  nt!IopParseDevice+0x1b9f (fffff804`806a141f):
+    call to nt!SeUnlockSubjectContext (fffff804`806684d0)
+  nt!IopParseDevice+0x1bab (fffff804`806a142b):
+    call to nt!ExReleaseResourceLite (fffff804`8005a450)
+  nt!IopParseDevice+0x1bb8 (fffff804`806a1438):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!IopParseDevice+0x1c4b (fffff804`806a14cb):
+    call to nt!IopSymlinkEnforceEnabledTypes (fffff804`8083fc5c)
+  nt!IopParseDevice+0x1c78 (fffff804`806a14f8):
+    call to nt!IoFreeIrp (fffff804`8011a520)
+  nt!IopParseDevice+0x1c87 (fffff804`806a1507):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x1c9c (fffff804`806a151c):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x1cb5 (fffff804`806a1535):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopParseDevice+0x1cce (fffff804`806a154e):
+    call to nt!PsGetCurrentServerSilo (fffff804`80149a50)
+  nt!IopParseDevice+0x1cd6 (fffff804`806a1556):
+    call to nt!PsGetServerSiloServiceSessionId (fffff804`802566c0)
+  nt!IopParseDevice+0x1cdd (fffff804`806a155d):
+    call to nt!PsGetCurrentProcessSessionId (fffff804`80131630)
+  nt!IopParseDevice+0x1cfb (fffff804`806a157b):
+    call to nt!IopGetDevicePDO (fffff804`800d488c)
+  nt!IopParseDevice+0x1d0b (fffff804`806a158b):
+    call to nt!IopCheckSessionDeviceAccess (fffff804`8014a630)
+  nt!IopParseDevice+0x1d1b (fffff804`806a159b):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopParseDevice+0x1d78 (fffff804`806a15f8):
+    call to nt!RtlGetActiveConsoleId (fffff804`8022f190)
+  nt!IopParseDevice+0x1d7f (fffff804`806a15ff):
+    call to nt!PsGetCurrentProcessSessionId (fffff804`80131630)
+  nt!IopParseDevice+0x1d8c (fffff804`806a160c):
+    call to nt!PsGetCurrentServerSilo (fffff804`80149a50)
+  nt!IopParseDevice+0x1d94 (fffff804`806a1614):
+    call to nt!PsGetServerSiloServiceSessionId (fffff804`802566c0)
+  nt!IopParseDevice+0x1d9b (fffff804`806a161b):
+    call to nt!PsGetCurrentProcessSessionId (fffff804`80131630)
+  nt!IopParseDevice+0x1da8 (fffff804`806a1628):
+    call to nt!IopAllowRemoteDASD (fffff804`802cb370)
+  nt!IopParseDevice+0x1de7 (fffff804`806a1667):
+    call to nt!ExAcquireResourceSharedLite (fffff804`80141e80)
+  nt!IopParseDevice+0x1dfc (fffff804`806a167c):
+    call to nt!SeFastTraverseCheck (fffff804`80165838)
+  nt!IopParseDevice+0x1e1f (fffff804`806a169f):
+    call to nt!SeLockSubjectContext (fffff804`80668470)
+  nt!IopParseDevice+0x1e82 (fffff804`806a1702):
+    call to nt!SeAccessCheck (fffff804`8015a5b0)
+  nt!IopParseDevice+0x1ea1 (fffff804`806a1721):
+    call to nt!SeAppendPrivileges (fffff804`807d2470)
+  nt!IopParseDevice+0x1eae (fffff804`806a172e):
+    call to nt!CmSiFreeMemory (fffff804`8026b8d0)
+  nt!IopParseDevice+0x1edb (fffff804`806a175b):
+    call to nt!IopDeleteFileObjectExtension (fffff804`801c3010)
+  nt!IopParseDevice+0x1f1c (fffff804`806a179c):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0x1f6a (fffff804`806a17ea):
+    call to nt!SeTokenIsAdmin (fffff804`806e91e0)
+  nt!IopParseDevice+0x201c (fffff804`806a189c):
+    call to nt!IopCreateSecurityCheck (fffff804`8026da5c)
+  nt!IopParseDevice+0x203a (fffff804`806a18ba):
+    call to nt!PsIsServerSilo (fffff804`80149b68)
+  nt!IopParseDevice+0x204a (fffff804`806a18ca):
+    call to nt!IoGetSilo (fffff804`80231ac0)
+  nt!IopParseDevice+0x2085 (fffff804`806a1905):
+    call to nt!KiLowerIrqlProcessIrqlFlags (fffff804`802f4f48)
+  nt!IopParseDevice+0x20a4 (fffff804`806a1924):
+    call to nt!IopCancelAlertedRequest (fffff804`8087bd74)
+  nt!IopParseDevice+0x20d2 (fffff804`806a1952):
+    call to nt!IopCheckAndUpdateStopOnSymlinkEcp (fffff804`804fae54)
+  nt!IopParseDevice+0x20e6 (fffff804`806a1966):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0x20f0 (fffff804`806a1970):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!IopParseDevice+0x20fd (fffff804`806a197d):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x211b (fffff804`806a199b):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x2128 (fffff804`806a19a8):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x2139 (fffff804`806a19b9):
+    call to nt!IopDeleteFileObjectExtension (fffff804`801c3010)
+  nt!IopParseDevice+0x2148 (fffff804`806a19c8):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x215d (fffff804`806a19dd):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x2165 (fffff804`806a19e5):
+    call to nt!IoFreeIrp (fffff804`8011a520)
+  nt!IopParseDevice+0x2189 (fffff804`806a1a09):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0x2191 (fffff804`806a1a11):
+    call to nt!IopDeleteFileObjectExtension (fffff804`801c3010)
+  nt!IopParseDevice+0x219e (fffff804`806a1a1e):
+    call to nt!IopDecrementDeviceObjectRef (fffff804`801f2340)
+  nt!IopParseDevice+0x21ce (fffff804`806a1a4e):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!IopParseDevice+0x2206 (fffff804`806a1a86):
+    call to nt!IopIncrementVpbRefCount (fffff804`800d5430)
+  nt!IopParseDevice+0x2217 (fffff804`806a1a97):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x223e (fffff804`806a1abe):
+    call to nt!MmIsDriverVerifying (fffff804`8029e430)
+  nt!IopParseDevice+0x224e (fffff804`806a1ace):
+    call to nt!VfFastIoSnapState (fffff804`809a97cc)
+  nt!IopParseDevice+0x2262 (fffff804`806a1ae2):
+    call to nt!KiRaiseIrqlProcessIrqlFlags (fffff804`802f4fac)
+  nt!IopParseDevice+0x22ce (fffff804`806a1b4e):
+    call to nt!IoSetActivityIdThread (fffff804`8025c3b0)
+  nt!IopParseDevice+0x22de (fffff804`806a1b5e):
+    call to nt!IofCallDriver (fffff804`80174160)
+  nt!IopParseDevice+0x22e9 (fffff804`806a1b69):
+    call to nt!IoSetActivityIdThread (fffff804`8025c3b0)
+  nt!IopParseDevice+0x231b (fffff804`806a1b9b):
+    call to nt!SeAppendPrivileges (fffff804`807d2470)
+  nt!IopParseDevice+0x2328 (fffff804`806a1ba8):
+    call to nt!CmSiFreeMemory (fffff804`8026b8d0)
+  nt!IopParseDevice+0x2356 (fffff804`806a1bd6):
+    call to nt!KeBugCheckEx (fffff804`802fb990)
+  nt!IopParseDevice+0x235f (fffff804`806a1bdf):
+    call to nt!IopDereferenceVpbAndFree (fffff804`800d68f8)
+  nt!IopParseDevice+0x237b (fffff804`806a1bfb):
+    call to nt!ObfReferenceObject (fffff804`8013fa90)
+  nt!IopParseDevice+0x238f (fffff804`806a1c0f):
+    call to nt!_security_check_cookie (fffff804`804a5920)

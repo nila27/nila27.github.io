@@ -1,7 +1,7 @@
 ---
 title: "Hyper-V vhdmp.sys baseline: 5 virtual disk formats × 158 workloads"
 date: 2026-05-02 18:30:00 +0900
-categories: [Cloud Storage, Hyper-V Disk]
+categories: [Windows Analyze, FileSystem]
 tags: [vhdmp, vhdx, kernel, hyper-v, benchmark, iocp, etw]
 lang: en
 ---

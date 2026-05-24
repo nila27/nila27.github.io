@@ -1,0 +1,276 @@
+kd> uf /c nt!ObpCreateHandle
+nt!ObpCreateHandle (fffff804`8064daa0)
+  nt!ObpCreateHandle+0x1f5 (fffff804`8064dc95):
+    call to nt!ExAcquireResourceSharedLite (fffff804`80141e80)
+  nt!ObpCreateHandle+0x21c (fffff804`8064dcbc):
+    call to nt!ExAcquireResourceSharedLite (fffff804`80141e80)
+  nt!ObpCreateHandle+0x25f (fffff804`8064dcff):
+    call to nt!SeAccessCheck (fffff804`8015a5b0)
+  nt!ObpCreateHandle+0x2b7 (fffff804`8064dd57):
+    call to nt!memcpy (fffff804`804bfc40)
+  nt!ObpCreateHandle+0x2c6 (fffff804`8064dd66):
+    call to nt!CmSiFreeMemory (fffff804`8026b8d0)
+  nt!ObpCreateHandle+0x31c (fffff804`8064ddbc):
+    call to nt!SeOpenObjectAuditAlarmWithTransaction (fffff804`806508e0)
+  nt!ObpCreateHandle+0x329 (fffff804`8064ddc9):
+    call to nt!ExReleaseResourceLite (fffff804`8005a450)
+  nt!ObpCreateHandle+0x337 (fffff804`8064ddd7):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0x349 (fffff804`8064dde9):
+    call to nt!ExReleaseResourceLite (fffff804`8005a450)
+  nt!ObpCreateHandle+0x357 (fffff804`8064ddf7):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0x48d (fffff804`8064df2d):
+    call to nt!SeComputeCreatorDeniedRights (fffff804`80159a70)
+  nt!ObpCreateHandle+0x50b (fffff804`8064dfab):
+    call to nt!ObpIncrementHandleCountEx (fffff804`8064fb60)
+  nt!ObpCreateHandle+0x5d0 (fffff804`8064e070):
+    call to nt!SeComputeCreatorDeniedRights (fffff804`80159a70)
+  nt!ObpCreateHandle+0x637 (fffff804`8064e0d7):
+    call to nt!ObReferenceObjectExWithTag (fffff804`8021f2e0)
+  nt!ObpCreateHandle+0x647 (fffff804`8064e0e7):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!ObpCreateHandle+0x733 (fffff804`8064e1d3):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpCreateHandle+0x74c (fffff804`8064e1ec):
+    call to nt!ExfAcquirePushLockExclusiveEx (fffff804`8013fd00)
+  nt!ObpCreateHandle+0x79b (fffff804`8064e23b):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpCreateHandle+0x7fb (fffff804`8064e29b):
+    call to nt!ExpUpdateDebugInfo (fffff804`8064d2f4)
+  nt!ObpCreateHandle+0x812 (fffff804`8064e2b2):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0x91f (fffff804`8064e3bf):
+    call to nt!SepAdtPrivilegeObjectAuditAlarm (fffff804`80650540)
+  nt!ObpCreateHandle+0x92f (fffff804`8064e3cf):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObpCreateHandle+0xa2d (fffff804`8064e4cd):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObpCreateHandle+0xa3b (fffff804`8064e4db):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0xacf (fffff804`8064e56f):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObpCreateHandle+0xaf6 (fffff804`8064e596):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObpCreateHandle+0xb25 (fffff804`8064e5c5):
+    call to nt!ExpLookupHandleTableEntry (fffff804`8064bf30)
+  nt!ObpCreateHandle+0xb86 (fffff804`8064e626):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!ObpCreateHandle+0xbee (fffff804`8064e68e):
+    call to nt!CmpSecurityMethod (fffff804`80652e10)
+  nt!ObpCreateHandle+0xd5c (fffff804`8064e7fc):
+    call to nt!ExfAcquireRundownProtection (fffff804`80047210)
+  nt!ObpCreateHandle+0xda3 (fffff804`8064e843):
+    call to nt!ExAcquireResourceSharedLite (fffff804`80141e80)
+  nt!ObpCreateHandle+0xdbf (fffff804`8064e85f):
+    call to nt!ExAcquireResourceSharedLite (fffff804`80141e80)
+  nt!ObpCreateHandle+0xddc (fffff804`8064e87c):
+    call to nt!ExReleaseResourceLite (fffff804`8005a450)
+  nt!ObpCreateHandle+0xdea (fffff804`8064e88a):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0xdf3 (fffff804`8064e893):
+    call to nt!ExReleaseResourceLite (fffff804`8005a450)
+  nt!ObpCreateHandle+0xe01 (fffff804`8064e8a1):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0xe10 (fffff804`8064e8b0):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObpCreateHandle+0xefa (fffff804`8064e99a):
+    call to nt!ObfReferenceObjectWithTag (fffff804`801403e0)
+  nt!ObpCreateHandle+0xf20 (fffff804`8064e9c0):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpCreateHandle+0xf45 (fffff804`8064e9e5):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObpCreateHandle+0xfd0 (fffff804`8064ea70):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpCreateHandle+0xff6 (fffff804`8064ea96):
+    call to nt!KiCheckForKernelApcDelivery (fffff804`800bb4d0)
+  nt!ObpCreateHandle+0x1043 (fffff804`8064eae3):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObpCreateHandle+0x107e (fffff804`8064eb1e):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpCreateHandle+0x10a5 (fffff804`8064eb45):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObpCreateHandle+0x1106 (fffff804`8064eba6):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpCreateHandle+0x112c (fffff804`8064ebcc):
+    call to nt!KiCheckForKernelApcDelivery (fffff804`800bb4d0)
+  nt!ObpCreateHandle+0x1169 (fffff804`8064ec09):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObpCreateHandle+0x1177 (fffff804`8064ec17):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0x11b5 (fffff804`8064ec55):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!ObpCreateHandle+0x1201 (fffff804`8064eca1):
+    call to nt!ExAcquireResourceSharedLite (fffff804`80141e80)
+  nt!ObpCreateHandle+0x1229 (fffff804`8064ecc9):
+    call to nt!ExpAllocateTablePagedPool (fffff804`8073bcfc)
+  nt!ObpCreateHandle+0x1258 (fffff804`8064ecf8):
+    call to nt!ExpFreeTablePagedPool (fffff804`8064d4e4)
+  nt!ObpCreateHandle+0x128b (fffff804`8064ed2b):
+    call to nt!ExpGetHandleExtraInfo (fffff804`8064d528)
+  nt!ObpCreateHandle+0x12ca (fffff804`8064ed6a):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpCreateHandle+0x12e3 (fffff804`8064ed83):
+    call to nt!ExfAcquirePushLockExclusiveEx (fffff804`8013fd00)
+  nt!ObpCreateHandle+0x132d (fffff804`8064edcd):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpCreateHandle+0x135f (fffff804`8064edff):
+    call to nt!KeBugCheckEx (fffff804`802fb990)
+  nt!ObpCreateHandle+0x1368 (fffff804`8064ee08):
+    call to nt!ExfReleasePushLock (fffff804`8005e260)
+  nt!ObpCreateHandle+0x1379 (fffff804`8064ee19):
+    call to nt!ExReleaseRundownProtection (fffff804`80045670)
+  nt!ObpCreateHandle+0x1390 (fffff804`8064ee30):
+    call to nt!ExfReleaseRundownProtection (fffff804`800456a0)
+  nt!ObpCreateHandle+0x13b7 (fffff804`8064ee57):
+    call to nt!ExfReleasePushLock (fffff804`8005e260)
+  nt!ObpCreateHandle+0x13e4 (fffff804`8064ee84):
+    call to nt!ObpInsertOrLocateNamedObject (fffff804`807e45c0)
+  nt!ObpCreateHandle+0x1417 (fffff804`8064eeb7):
+    call to nt!ExfTryToWakePushLock (fffff804`8005f9a0)
+  nt!ObpCreateHandle+0x143b (fffff804`8064eedb):
+    call to nt!ObpCreateSymbolicLinkName (fffff804`804f8670)
+  nt!ObpCreateHandle+0x144f (fffff804`8064eeef):
+    call to nt!ObpDecrementHandleCount (fffff804`806410a0)
+  nt!ObpCreateHandle+0x1469 (fffff804`8064ef09):
+    call to nt!ObDereferenceObjectExWithTag (fffff804`801c5220)
+  nt!ObpCreateHandle+0x1483 (fffff804`8064ef23):
+    call to nt!ExfReleaseRundownProtection (fffff804`800456a0)
+  nt!ObpCreateHandle+0x14f6 (fffff804`8064ef96):
+    call to nt!SepPrivilegeCheck (fffff804`80203670)
+  nt!ObpCreateHandle+0x1513 (fffff804`8064efb3):
+    call to nt!SePrivilegedServiceAuditAlarm (fffff804`80653b30)
+  nt!ObpCreateHandle+0x15d7 (fffff804`8064f077):
+    call to nt!RtlEqualSid (fffff804`80164150)
+  nt!ObpCreateHandle+0x15ec (fffff804`8064f08c):
+    call to nt!OBJECT_HEADER_TO_HANDLE_REVOCATION_INFO (fffff804`801c3480)
+  nt!ObpCreateHandle+0x1617 (fffff804`8064f0b7):
+    call to nt!SepSidInTokenSidHash (fffff804`801df2c0)
+  nt!ObpCreateHandle+0x1635 (fffff804`8064f0d5):
+    call to nt!ObHandleRevocationBlockAddObject (fffff804`807aae30)
+  nt!ObpCreateHandle+0x1644 (fffff804`8064f0e4):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObpCreateHandle+0x166e (fffff804`8064f10e):
+    call to nt!ExfTryToWakePushLock (fffff804`8005f9a0)
+  nt!ObpCreateHandle+0x1689 (fffff804`8064f129):
+    call to nt!ObpAllocateAndQuerySecurityDescriptorInfo (fffff804`80679e8c)
+  nt!ObpCreateHandle+0x16a1 (fffff804`8064f141):
+    call to nt!ObpSetObjectAuditInfo (fffff804`80667674)
+  nt!ObpCreateHandle+0x16c4 (fffff804`8064f164):
+    call to nt!EtwpTraceHandle (fffff804`8064cbbc)
+  nt!ObpCreateHandle+0x16d6 (fffff804`8064f176):
+    call to nt!ObDereferenceSecurityDescriptor (fffff804`80679d10)
+  nt!ObpCreateHandle+0x16e0 (fffff804`8064f180):
+    call to nt!ExfAcquireRundownProtection (fffff804`80047210)
+  nt!ObpCreateHandle+0x16fe (fffff804`8064f19e):
+    call to nt!ObpReferenceSecurityDescriptorSlow (fffff804`8067aefc)
+  nt!ObpCreateHandle+0x172a (fffff804`8064f1ca):
+    call to nt!IopGetSetSecurityObject (fffff804`806796f0)
+  nt!ObpCreateHandle+0x1744 (fffff804`8064f1e4):
+    call to nt!ObpPushStackInfo (fffff804`801407ac)
+  nt!ObpCreateHandle+0x175d (fffff804`8064f1fd):
+    call to nt!ObpPushStackInfo (fffff804`801407ac)
+  nt!ObpCreateHandle+0x1777 (fffff804`8064f217):
+    call to nt!ExfReleaseRundownProtection (fffff804`800456a0)
+  nt!ObpCreateHandle+0x17a7 (fffff804`8064f247):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpCreateHandle+0x17c1 (fffff804`8064f261):
+    call to nt!ExfAcquirePushLockExclusiveEx (fffff804`8013fd00)
+  nt!ObpCreateHandle+0x17e2 (fffff804`8064f282):
+    call to nt!ExpAllocateHandleTableEntrySlow (fffff804`8073cbe8)
+  nt!ObpCreateHandle+0x1805 (fffff804`8064f2a5):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpCreateHandle+0x1860 (fffff804`8064f300):
+    call to nt!ExfReleaseRundownProtection (fffff804`800456a0)
+  nt!ObpCreateHandle+0x1882 (fffff804`8064f322):
+    call to nt!SeAppendPrivileges (fffff804`807d2470)
+  nt!ObpCreateHandle+0x1897 (fffff804`8064f337):
+    call to nt!ObDereferenceSecurityDescriptor (fffff804`80679d10)
+  nt!ObpCreateHandle+0x18b1 (fffff804`8064f351):
+    call to nt!ObpReferenceSecurityDescriptorSlow (fffff804`8067aefc)
+  nt!ObpCreateHandle+0x18c6 (fffff804`8064f366):
+    call to nt!ObDereferenceSecurityDescriptor (fffff804`80679d10)
+  nt!ObpCreateHandle+0x18d8 (fffff804`8064f378):
+    call to nt!ObpReferenceSecurityDescriptorSlow (fffff804`8067aefc)
+  nt!ObpCreateHandle+0x18f2 (fffff804`8064f392):
+    call to nt!ObpSetObjectAuditInfo (fffff804`80667674)
+  nt!ObpCreateHandle+0x195a (fffff804`8064f3fa):
+    call to nt!SepAdtPrivilegeObjectAuditAlarm (fffff804`80650540)
+  nt!ObpCreateHandle+0x198c (fffff804`8064f42c):
+    call to nt!ZwDuplicateObject (fffff804`804a6b90)
+  nt!ObpCreateHandle+0x19bb (fffff804`8064f45b):
+    call to nt!ObReferenceObjectByHandle (fffff804`8064af40)
+  nt!ObpCreateHandle+0x19d7 (fffff804`8064f477):
+    call to nt!SepAdtClassifyObjectIntoSubCategory (fffff804`806f1a40)
+  nt!ObpCreateHandle+0x19e8 (fffff804`8064f488):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!ObpCreateHandle+0x19f6 (fffff804`8064f496):
+    call to nt!ZwClose (fffff804`804a65f0)
+  nt!ObpCreateHandle+0x19ff (fffff804`8064f49f):
+    call to nt!PsGetCurrentProcessId (fffff804`802296f0)
+  nt!ObpCreateHandle+0x1a94 (fffff804`8064f534):
+    call to nt!SepAdtOpenObjectAuditAlarm (fffff804`806f1214)
+  nt!ObpCreateHandle+0x1adf (fffff804`8064f57f):
+    call to nt!SepAdtStagingEvent (fffff804`806f1920)
+  nt!ObpCreateHandle+0x1b02 (fffff804`8064f5a2):
+    call to nt!ExReleaseRundownProtection (fffff804`80045670)
+  nt!ObpCreateHandle+0x1b6e (fffff804`8064f60e):
+    call to nt!ObpCallPostOperationCallbacks (fffff804`80740a78)
+  nt!ObpCreateHandle+0x1c12 (fffff804`8064f6b2):
+    call to nt!PsGetProcessServerSilo (fffff804`80245660)
+  nt!ObpCreateHandle+0x1c1a (fffff804`8064f6ba):
+    call to nt!PsAttachSiloToCurrentThread (fffff804`8023cf50)
+  nt!ObpCreateHandle+0x1c2e (fffff804`8064f6ce):
+    call to nt!KeStackAttachProcess (fffff804`800473f0)
+  nt!ObpCreateHandle+0x1c55 (fffff804`8064f6f5):
+    call to nt!CmpCloseKeyObject (fffff804`80641890)
+  nt!ObpCreateHandle+0x1c69 (fffff804`8064f709):
+    call to nt!KiUnstackDetachProcess (fffff804`80121ec0)
+  nt!ObpCreateHandle+0x1c72 (fffff804`8064f712):
+    call to nt!PsDetachSiloFromCurrentThread (fffff804`80244750)
+  nt!ObpCreateHandle+0x1c80 (fffff804`8064f720):
+    call to nt!ObpDeleteNameCheck (fffff804`8069b690)
+  nt!ObpCreateHandle+0x1c9e (fffff804`8064f73e):
+    call to nt!ObDereferenceObjectExWithTag (fffff804`801c5220)
+  nt!ObpCreateHandle+0x1cd6 (fffff804`8064f776):
+    call to nt!EtwEventEnabled (fffff804`800a1bd0)
+  nt!ObpCreateHandle+0x1d07 (fffff804`8064f7a7):
+    call to nt!EtwpEventWriteTemplateSessAndProv (fffff804`80641ccc)
+  nt!ObpCreateHandle+0x1d35 (fffff804`8064f7d5):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpCreateHandle+0x1d52 (fffff804`8064f7f2):
+    call to nt!ExfAcquirePushLockExclusiveEx (fffff804`8013fd00)
+  nt!ObpCreateHandle+0x1e38 (fffff804`8064f8d8):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpCreateHandle+0x1e46 (fffff804`8064f8e6):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0x1e69 (fffff804`8064f909):
+    call to nt!IopCloseFile (fffff804`80642070)
+  nt!ObpCreateHandle+0x1ed9 (fffff804`8064f979):
+    call to nt!ExfReleasePushLock (fffff804`8005e260)
+  nt!ObpCreateHandle+0x1eec (fffff804`8064f98c):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObpCreateHandle+0x1f07 (fffff804`8064f9a7):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!ObpCreateHandle+0x1f5a (fffff804`8064f9fa):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObpCreateHandle+0x1f6f (fffff804`8064fa0f):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpCreateHandle+0x1f80 (fffff804`8064fa20):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObpCreateHandle+0x1fcd (fffff804`8064fa6d):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!ObpCreateHandle+0x2001 (fffff804`8064faa1):
+    call to nt!memcpy (fffff804`804bfc40)
+  nt!ObpCreateHandle+0x2010 (fffff804`8064fab0):
+    call to nt!SepConcatenatePrivileges (fffff804`807d25c0)
+  nt!ObpCreateHandle+0x2020 (fffff804`8064fac0):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObpCreateHandle+0x2048 (fffff804`8064fae8):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObpCreateHandle+0x2055 (fffff804`8064faf5):
+    call to nt!ExfTryToWakePushLock (fffff804`8005f9a0)
+  nt!ObpCreateHandle+0x205f (fffff804`8064faff):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObpCreateHandle+0x2095 (fffff804`8064fb35):
+    call to nt!_security_check_cookie (fffff804`804a5920)

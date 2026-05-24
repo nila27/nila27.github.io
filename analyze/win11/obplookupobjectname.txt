@@ -1,0 +1,240 @@
+kd> uf /c obplookupobjectname
+nt!ObpLookupObjectName (fffff804`8069d210)
+  nt!ObpLookupObjectName+0x170 (fffff804`8069d380):
+    call to nt!PsGetPermanentSiloContext (fffff804`801f0070)
+  nt!ObpLookupObjectName+0x1cc (fffff804`8069d3dc):
+    call to nt!ObpReferenceObjectByHandleWithTag (fffff804`8064b7e0)
+  nt!ObpLookupObjectName+0x254 (fffff804`8069d464):
+    call to nt!SeSetLearningModeObjectInformation (fffff804`802bbe8c)
+  nt!ObpLookupObjectName+0x286 (fffff804`8069d496):
+    call to nt!PsGetPermanentSiloContext (fffff804`801f0070)
+  nt!ObpLookupObjectName+0x303 (fffff804`8069d513):
+    call to nt!PsGetProcessServerSilo (fffff804`80245660)
+  nt!ObpLookupObjectName+0x30e (fffff804`8069d51e):
+    call to nt!PsGetThreadServerSilo (fffff804`80148a90)
+  nt!ObpLookupObjectName+0x365 (fffff804`8069d575):
+    call to nt!PspLockThreadSecurityShared (fffff804`8021f270)
+  nt!ObpLookupObjectName+0x397 (fffff804`8069d5a7):
+    call to nt!ObfReferenceObjectWithTag (fffff804`801403e0)
+  nt!ObpLookupObjectName+0x3a2 (fffff804`8069d5b2):
+    call to nt!PspUnlockThreadSecurityShared (fffff804`8021afc0)
+  nt!ObpLookupObjectName+0x3ce (fffff804`8069d5de):
+    call to nt!SeGetTokenDeviceMap (fffff804`8078519c)
+  nt!ObpLookupObjectName+0x3e7 (fffff804`8069d5f7):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObpLookupObjectName+0x448 (fffff804`8069d658):
+    call to nt!PsGetCurrentServerSiloGlobals (fffff804`80147d10)
+  nt!ObpLookupObjectName+0x46d (fffff804`8069d67d):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpLookupObjectName+0x48e (fffff804`8069d69e):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObpLookupObjectName+0x514 (fffff804`8069d724):
+    call to nt!ExfReleasePushLockShared (fffff804`8005de00)
+  nt!ObpLookupObjectName+0x540 (fffff804`8069d750):
+    call to nt!RtlGetNtSystemRoot (fffff804`8080b910)
+  nt!ObpLookupObjectName+0x548 (fffff804`8069d758):
+    call to nt!RtlUpcaseUnicodeChar (fffff804`806441f0)
+  nt!ObpLookupObjectName+0x558 (fffff804`8069d768):
+    call to nt!RtlUpcaseUnicodeChar (fffff804`806441f0)
+  nt!ObpLookupObjectName+0x69a (fffff804`8069d8aa):
+    call to nt!ObpTraceObjectReferenceIfActive (fffff804`80140450)
+  nt!ObpLookupObjectName+0x749 (fffff804`8069d959):
+    call to nt!ObpParseSymbolicLinkEx (fffff804`8070bd40)
+  nt!ObpLookupObjectName+0x7e3 (fffff804`8069d9f3):
+    call to nt!ObfReferenceObject (fffff804`8013fa90)
+  nt!ObpLookupObjectName+0x827 (fffff804`8069da37):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpLookupObjectName+0x83d (fffff804`8069da4d):
+    call to nt!ObDereferenceObjectDeferDeleteWithTag (fffff804`8005e950)
+  nt!ObpLookupObjectName+0x85b (fffff804`8069da6b):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpLookupObjectName+0x8de (fffff804`8069daee):
+    call to nt!CmpParseKey (fffff804`8069f150)
+  nt!ObpLookupObjectName+0x8ea (fffff804`8069dafa):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!ObpLookupObjectName+0x90b (fffff804`8069db1b):
+    call to nt!ObDereferenceObjectDeferDelete (fffff804`801c5ce0)
+  nt!ObpLookupObjectName+0x9ee (fffff804`8069dbfe):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpLookupObjectName+0xa04 (fffff804`8069dc14):
+    call to nt!ObDereferenceObjectDeferDeleteWithTag (fffff804`8005e950)
+  nt!ObpLookupObjectName+0xa22 (fffff804`8069dc32):
+    call to nt!KeLeaveCriticalRegionThread (fffff804`800595a0)
+  nt!ObpLookupObjectName+0xb40 (fffff804`8069dd50):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpLookupObjectName+0xb6b (fffff804`8069dd7b):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObpLookupObjectName+0xb9b (fffff804`8069ddab):
+    call to nt!ExfReleasePushLockShared (fffff804`8005de00)
+  nt!ObpLookupObjectName+0xba7 (fffff804`8069ddb7):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpLookupObjectName+0xbbd (fffff804`8069ddcd):
+    call to nt!ObDereferenceObjectDeferDeleteWithTag (fffff804`8005e950)
+  nt!ObpLookupObjectName+0xd7d (fffff804`8069df8d):
+    call to nt!IopParseDevice (fffff804`8069f880)
+  nt!ObpLookupObjectName+0xdc7 (fffff804`8069dfd7):
+    call to nt!ObpFastReplenishReference (fffff804`8021fc90)
+  nt!ObpLookupObjectName+0xe35 (fffff804`8069e045):
+    call to nt!ObpParseSymbolicLinkEx (fffff804`8070bd40)
+  nt!ObpLookupObjectName+0xe45 (fffff804`8069e055):
+    call to nt!IopParseDevice (fffff804`8069f880)
+  nt!ObpLookupObjectName+0xe88 (fffff804`8069e098):
+    call to nt!ObpPushStackInfo (fffff804`801407ac)
+  nt!ObpLookupObjectName+0xf6b (fffff804`8069e17b):
+    call to nt!PsGetPermanentSiloContext (fffff804`801f0070)
+  nt!ObpLookupObjectName+0xfb2 (fffff804`8069e1c2):
+    call to nt!ExfReleasePushLock (fffff804`8005e260)
+  nt!ObpLookupObjectName+0xfbf (fffff804`8069e1cf):
+    call to nt!ExfReleasePushLock (fffff804`8005e260)
+  nt!ObpLookupObjectName+0xfd4 (fffff804`8069e1e4):
+    call to nt!ObpReleaseLookupContext (fffff804`8005e7e0)
+  nt!ObpLookupObjectName+0xfef (fffff804`8069e1ff):
+    call to nt!ObDereferenceObjectDeferDelete (fffff804`801c5ce0)
+  nt!ObpLookupObjectName+0xff4 (fffff804`8069e204):
+    call to nt!SeClearLearningModeObjectInformation (fffff804`80208fe0)
+  nt!ObpLookupObjectName+0x107c (fffff804`8069e28c):
+    call to nt!OBP_GET_SILO_ROOT_DIRECTORY_FROM_SILO (fffff804`80202480)
+  nt!ObpLookupObjectName+0x10a6 (fffff804`8069e2b6):
+    call to nt!ExfAcquirePushLockExclusiveEx (fffff804`8013fd00)
+  nt!ObpLookupObjectName+0x10ec (fffff804`8069e2fc):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpLookupObjectName+0x1119 (fffff804`8069e329):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObpLookupObjectName+0x1151 (fffff804`8069e361):
+    call to nt!PsGetCurrentServerSiloGlobals (fffff804`80147d10)
+  nt!ObpLookupObjectName+0x1190 (fffff804`8069e3a0):
+    call to nt!RtlCompareMemory (fffff804`804b3990)
+  nt!ObpLookupObjectName+0x1313 (fffff804`8069e523):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!ObpLookupObjectName+0x1367 (fffff804`8069e577):
+    call to nt!ObDereferenceDeviceMap (fffff804`807855d4)
+  nt!ObpLookupObjectName+0x1374 (fffff804`8069e584):
+    call to nt!RtlUpcaseUnicodeChar (fffff804`806441f0)
+  nt!ObpLookupObjectName+0x13d7 (fffff804`8069e5e7):
+    call to nt!IopParseFile (fffff804`807f4690)
+  nt!ObpLookupObjectName+0x1415 (fffff804`8069e625):
+    call to nt!ObpCheckTraverseAccess (fffff804`80667e80)
+  nt!ObpLookupObjectName+0x1465 (fffff804`8069e675):
+    call to nt!memcmp (fffff804`804bff10)
+  nt!ObpLookupObjectName+0x148d (fffff804`8069e69d):
+    call to nt!RtlUpcaseUnicodeChar (fffff804`806441f0)
+  nt!ObpLookupObjectName+0x14db (fffff804`8069e6eb):
+    call to nt!ObpReferenceCurrentDeviceMap (fffff804`80784ea0)
+  nt!ObpLookupObjectName+0x150d (fffff804`8069e71d):
+    call to nt!ObReferenceObjectByPointer (fffff804`80232520)
+  nt!ObpLookupObjectName+0x1580 (fffff804`8069e790):
+    call to nt!ObReferenceObjectByPointer (fffff804`80232520)
+  nt!ObpLookupObjectName+0x15f1 (fffff804`8069e801):
+    call to nt!ObCheckCreateObjectAccess (fffff804`806682f0)
+  nt!ObpLookupObjectName+0x161e (fffff804`8069e82e):
+    call to nt!ExAllocatePool2 (fffff804`809720f0)
+  nt!ObpLookupObjectName+0x1638 (fffff804`8069e848):
+    call to nt!ObpInsertDirectoryEntry (fffff804`808078ac)
+  nt!ObpLookupObjectName+0x164f (fffff804`8069e85f):
+    call to nt!memcpy (fffff804`804bfc40)
+  nt!ObpLookupObjectName+0x167d (fffff804`8069e88d):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObpLookupObjectName+0x16e3 (fffff804`8069e8f3):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpLookupObjectName+0x1729 (fffff804`8069e939):
+    call to nt!ExfReleasePushLockShared (fffff804`8005de00)
+  nt!ObpLookupObjectName+0x1734 (fffff804`8069e944):
+    call to nt!PsGetCurrentServerSiloGlobals (fffff804`80147d10)
+  nt!ObpLookupObjectName+0x1756 (fffff804`8069e966):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpLookupObjectName+0x1777 (fffff804`8069e987):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObpLookupObjectName+0x17ab (fffff804`8069e9bb):
+    call to nt!ExfReleasePushLockShared (fffff804`8005de00)
+  nt!ObpLookupObjectName+0x17cd (fffff804`8069e9dd):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObpLookupObjectName+0x17d5 (fffff804`8069e9e5):
+    call to nt!PsGetServerSiloGlobals (fffff804`80149380)
+  nt!ObpLookupObjectName+0x17e7 (fffff804`8069e9f7):
+    call to nt!ObDereferenceDeviceMap (fffff804`807855d4)
+  nt!ObpLookupObjectName+0x17f7 (fffff804`8069ea07):
+    call to nt!ObpLockDirectoryExclusive (fffff804`807e4e58)
+  nt!ObpLookupObjectName+0x1837 (fffff804`8069ea47):
+    call to nt!ObReferenceObjectByPointer (fffff804`80232520)
+  nt!ObpLookupObjectName+0x1849 (fffff804`8069ea59):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!ObpLookupObjectName+0x1865 (fffff804`8069ea75):
+    call to nt!PsGetServerSiloGlobals (fffff804`80149380)
+  nt!ObpLookupObjectName+0x188a (fffff804`8069ea9a):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpLookupObjectName+0x18ac (fffff804`8069eabc):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObpLookupObjectName+0x18c2 (fffff804`8069ead2):
+    call to nt!ObFastReferenceObjectLocked (fffff804`80197714)
+  nt!ObpLookupObjectName+0x18df (fffff804`8069eaef):
+    call to nt!ExfReleasePushLockShared (fffff804`8005de00)
+  nt!ObpLookupObjectName+0x18e7 (fffff804`8069eaf7):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpLookupObjectName+0x18ec (fffff804`8069eafc):
+    call to nt!KeLeaveGuardedRegion (fffff804`800bb460)
+  nt!ObpLookupObjectName+0x1975 (fffff804`8069eb85):
+    call to nt!ExpWin32ParseProcedure (fffff804`80734fb0)
+  nt!ObpLookupObjectName+0x19af (fffff804`8069ebbf):
+    call to nt!ObpSetCurrentProcessDeviceMap (fffff804`80785458)
+  nt!ObpLookupObjectName+0x19d8 (fffff804`8069ebe8):
+    call to nt!ObDereferenceDeviceMap (fffff804`807855d4)
+  nt!ObpLookupObjectName+0x1a04 (fffff804`8069ec14):
+    call to nt!PsGetCurrentProcessSessionId (fffff804`80131630)
+  nt!ObpLookupObjectName+0x1a1c (fffff804`8069ec2c):
+    call to nt!SeSinglePrivilegeCheck (fffff804`80653e90)
+  nt!ObpLookupObjectName+0x1a39 (fffff804`8069ec49):
+    call to nt!ObpIsUnsecureName (fffff804`8085aaf0)
+  nt!ObpLookupObjectName+0x1a62 (fffff804`8069ec72):
+    call to nt!ObfDereferenceObjectWithTag (fffff804`801254a0)
+  nt!ObpLookupObjectName+0x1a81 (fffff804`8069ec91):
+    call to nt!ExfTryAcquirePushLockSharedEx (fffff804`802736d4)
+  nt!ObpLookupObjectName+0x1abf (fffff804`8069eccf):
+    call to nt!ObDereferenceObjectDeferDelete (fffff804`801c5ce0)
+  nt!ObpLookupObjectName+0x1add (fffff804`8069eced):
+    call to nt!ObReferenceObjectByPointer (fffff804`80232520)
+  nt!ObpLookupObjectName+0x1b0a (fffff804`8069ed1a):
+    call to nt!ObfReferenceObjectWithTag (fffff804`801403e0)
+  nt!ObpLookupObjectName+0x1b2c (fffff804`8069ed3c):
+    call to nt!ExfReleasePushLockShared (fffff804`8005de00)
+  nt!ObpLookupObjectName+0x1b38 (fffff804`8069ed48):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpLookupObjectName+0x1b49 (fffff804`8069ed59):
+    call to nt!KeAbPreAcquire (fffff804`80140250)
+  nt!ObpLookupObjectName+0x1b76 (fffff804`8069ed86):
+    call to nt!ExfAcquirePushLockSharedEx (fffff804`8014050c)
+  nt!ObpLookupObjectName+0x1c01 (fffff804`8069ee11):
+    call to nt!ObReferenceObjectByPointer (fffff804`80232520)
+  nt!ObpLookupObjectName+0x1c25 (fffff804`8069ee35):
+    call to nt!ObDereferenceDeviceMap (fffff804`807855d4)
+  nt!ObpLookupObjectName+0x1c52 (fffff804`8069ee62):
+    call to nt!ObfDereferenceObject (fffff804`80125680)
+  nt!ObpLookupObjectName+0x1c76 (fffff804`8069ee86):
+    call to nt!KeAbPostReleaseEx (fffff804`8005cce0)
+  nt!ObpLookupObjectName+0x1c8d (fffff804`8069ee9d):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObpLookupObjectName+0x1cbe (fffff804`8069eece):
+    call to nt!PsGetCurrentServerSiloGlobals (fffff804`80147d10)
+  nt!ObpLookupObjectName+0x1d00 (fffff804`8069ef10):
+    call to nt!RtlCompareMemory (fffff804`804b3990)
+  nt!ObpLookupObjectName+0x1e14 (fffff804`8069f024):
+    call to nt!memcmp (fffff804`804bff10)
+  nt!ObpLookupObjectName+0x1e41 (fffff804`8069f051):
+    call to nt!SeSetLearningModeObjectInformation (fffff804`802bbe8c)
+  nt!ObpLookupObjectName+0x1e88 (fffff804`8069f098):
+    call to nt!RtlIsSandboxedToken (fffff804`8070c230)
+  nt!ObpLookupObjectName+0x1eb6 (fffff804`8069f0c6):
+    call to nt!ObDereferenceObjectDeferDeleteWithTag (fffff804`8005e950)
+  nt!ObpLookupObjectName+0x1ecd (fffff804`8069f0dd):
+    call to nt!KscpCfgDispatchUserCallTargetEsSmep (fffff804`809be780)
+  nt!ObpLookupObjectName+0x1ef3 (fffff804`8069f103):
+    call to nt!ExFreePoolWithTag (fffff804`80972cd0)
+  nt!ObpLookupObjectName+0x26cdf5 (fffff804`8090a005):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpLookupObjectName+0x26cdfa (fffff804`8090a00a):
+    call to nt!KeLeaveGuardedRegion (fffff804`800bb460)
+  nt!ObpLookupObjectName+0x26ce08 (fffff804`8090a018):
+    call to nt!KeAbPostRelease (fffff804`800bb060)
+  nt!ObpLookupObjectName+0x26ce0d (fffff804`8090a01d):
+    call to nt!KeLeaveGuardedRegion (fffff804`800bb460)
+  nt!ObpLookupObjectName+0x26ce30 (fffff804`8090a040):
+    call to nt!KeAbPostRelease (fffff804`800bb060)

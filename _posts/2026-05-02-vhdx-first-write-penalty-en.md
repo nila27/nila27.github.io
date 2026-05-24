@@ -1,7 +1,7 @@
 ---
 title: "VHDX-Dynamic's 32 MiB block default is a cloud storage kernel trap"
 date: 2026-05-02 18:00:00 +0900
-categories: [Cloud Storage, Hyper-V Disk]
+categories: [Windows Analyze, FileSystem]
 tags: [vhdmp, vhdx, kernel, hyper-v, block-storage]
 lang: en
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Tracing vhdmp.sys: why your WPR session captures zero VHDMP events"
 date: 2026-05-02 19:00:00 +0900
-categories: [Cloud Storage, Hyper-V Disk]
+categories: [Windows Analyze, FileSystem]
 tags: [etw, wpr, vhdmp, kernel, debugging]
 lang: en
 ---

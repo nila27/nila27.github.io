@@ -1,0 +1,90 @@
+kd> uf /c nt!ObOpenObjectByNameEx
+nt!ObOpenObjectByNameEx (fffff801`0b8443a0)
+  nt!ObOpenObjectByNameEx+0x88 (fffff801`0b844428):
+    call to nt!ExpInterlockedPopEntrySList (fffff801`0b622820)
+  nt!ObOpenObjectByNameEx+0xc2 (fffff801`0b844462):
+    call to nt!ObpCaptureObjectCreateInformation (fffff801`0b844b10)
+  nt!ObOpenObjectByNameEx+0x126 (fffff801`0b8444c6):
+    call to nt!ObFastReferenceObject (fffff801`0b45ec70)
+  nt!ObOpenObjectByNameEx+0x163 (fffff801`0b844503):
+    call to nt!SepCreateAccessStateFromSubjectContext (fffff801`0b45ed90)
+  nt!ObOpenObjectByNameEx+0x1f5 (fffff801`0b844595):
+    call to nt!ObpLookupObjectName (fffff801`0b83aee0)
+  nt!ObOpenObjectByNameEx+0x271 (fffff801`0b844611):
+    call to nt!ExpInterlockedPushEntrySList (fffff801`0b622860)
+  nt!ObOpenObjectByNameEx+0x2d9 (fffff801`0b844679):
+    call to nt!SeSetLearningModeObjectInformation (fffff801`0b45ef10)
+  nt!ObOpenObjectByNameEx+0x31a (fffff801`0b8446ba):
+    call to nt!ObpCreateHandle (fffff801`0b83d510)
+  nt!ObOpenObjectByNameEx+0x34a (fffff801`0b8446ea):
+    call to nt!SepDeleteAccessState (fffff801`0b45ebf0)
+  nt!ObOpenObjectByNameEx+0x377 (fffff801`0b844717):
+    call to nt!ObFastDereferenceObject (fffff801`0b45eba0)
+  nt!ObOpenObjectByNameEx+0x3df (fffff801`0b84477f):
+    call to nt!ExpInterlockedPushEntrySList (fffff801`0b622860)
+  nt!ObOpenObjectByNameEx+0x3e4 (fffff801`0b844784):
+    call to nt!SeClearLearningModeObjectInformation (fffff801`0b45eb40)
+  nt!ObOpenObjectByNameEx+0x40c (fffff801`0b8447ac):
+    call to nt!ExpInterlockedPushEntrySList (fffff801`0b622860)
+  nt!ObOpenObjectByNameEx+0x45d (fffff801`0b8447fd):
+    call to nt!ExAcquirePushLockSharedEx (fffff801`0b457c30)
+  nt!ObOpenObjectByNameEx+0x47a (fffff801`0b84481a):
+    call to nt!ObfReferenceObject (fffff801`0b458330)
+  nt!ObOpenObjectByNameEx+0x4a4 (fffff801`0b844844):
+    call to nt!KeAbPostRelease (fffff801`0b455d60)
+  nt!ObOpenObjectByNameEx+0x4ad (fffff801`0b84484d):
+    call to nt!KeLeaveCriticalRegionThread (fffff801`0b4309c0)
+  nt!ObOpenObjectByNameEx+0x4b7 (fffff801`0b844857):
+    call to nt!HalPutDmaAdapter (fffff801`0b458220)
+  nt!ObOpenObjectByNameEx+0x4c6 (fffff801`0b844866):
+    call to nt!ExFreePool (fffff801`0bbd20b0)
+  nt!ObOpenObjectByNameEx+0x50a (fffff801`0b8448aa):
+    call to nt!ObpDeleteNameCheck (fffff801`0b890680)
+  nt!ObOpenObjectByNameEx+0x513 (fffff801`0b8448b3):
+    call to nt!HalPutDmaAdapter (fffff801`0b458220)
+  nt!ObOpenObjectByNameEx+0x529 (fffff801`0b8448c9):
+    call to nt!ExReleasePushLockEx (fffff801`0b457f70)
+  nt!ObOpenObjectByNameEx+0x539 (fffff801`0b8448d9):
+    call to nt!HalPutDmaAdapter (fffff801`0b458220)
+  nt!ObOpenObjectByNameEx+0x548 (fffff801`0b8448e8):
+    call to nt!KeLeaveCriticalRegion (fffff801`0b4584b0)
+  nt!ObOpenObjectByNameEx+0x565 (fffff801`0b844905):
+    call to nt!ObfReferenceObject (fffff801`0b458330)
+  nt!ObOpenObjectByNameEx+0x593 (fffff801`0b844933):
+    call to nt!HalPutDmaAdapter (fffff801`0b458220)
+  nt!ObOpenObjectByNameEx+0x5b1 (fffff801`0b844951):
+    call to nt!ExpInterlockedPopEntrySList (fffff801`0b622820)
+  nt!ObOpenObjectByNameEx+0x5d3 (fffff801`0b844973):
+    call to nt!guard_dispatch_icall (fffff801`0b6234a0)
+  nt!ObOpenObjectByNameEx+0x5f5 (fffff801`0b844995):
+    call to nt!RtlValidSecurityDescriptor (fffff801`0b820320)
+  nt!ObOpenObjectByNameEx+0x61c (fffff801`0b8449bc):
+    call to nt!SeObjectCreateSaclAccessBits (fffff801`0b904b44)
+  nt!ObOpenObjectByNameEx+0x633 (fffff801`0b8449d3):
+    call to nt!SeReleaseSecurityDescriptor (fffff801`0b878370)
+  nt!ObOpenObjectByNameEx+0x66a (fffff801`0b844a0a):
+    call to nt!guard_dispatch_icall (fffff801`0b6234a0)
+  nt!ObOpenObjectByNameEx+0x698 (fffff801`0b844a38):
+    call to nt!guard_dispatch_icall (fffff801`0b6234a0)
+  nt!ObOpenObjectByNameEx+0x6c6 (fffff801`0b844a66):
+    call to nt!guard_dispatch_icall (fffff801`0b6234a0)
+  nt!ObOpenObjectByNameEx+0x6d3 (fffff801`0b844a73):
+    call to nt!ExfReleasePushLockShared (fffff801`0b50ba40)
+  nt!ObOpenObjectByNameEx+0x6e1 (fffff801`0b844a81):
+    call to nt!HalPutDmaAdapter (fffff801`0b458220)
+  nt!ObOpenObjectByNameEx+0x70e (fffff801`0b844aae):
+    call to nt!ExAcquirePushLockSharedEx (fffff801`0b457c30)
+  nt!ObOpenObjectByNameEx+0x716 (fffff801`0b844ab6):
+    call to nt!ObFastReferenceObjectLocked (fffff801`0b42ed38)
+  nt!ObOpenObjectByNameEx+0x72f (fffff801`0b844acf):
+    call to nt!KeAbPostRelease (fffff801`0b455d60)
+  nt!ObOpenObjectByNameEx+0x738 (fffff801`0b844ad8):
+    call to nt!KeLeaveCriticalRegionThread (fffff801`0b4309c0)
+  nt!ObOpenObjectByNameEx+0x745 (fffff801`0b844ae5):
+    call to nt!ExfReleasePushLockShared (fffff801`0b50ba40)
+  nt!ObOpenObjectByNameEx+0x1d262e (fffff801`0ba169ce):
+    call to nt!ExpInterlockedPushEntrySList (fffff801`0b622860)
+  nt!ObOpenObjectByNameEx+0x1d2699 (fffff801`0ba16a39):
+    call to nt!SeReleaseSecurityDescriptor (fffff801`0b878370)
+  nt!ObOpenObjectByNameEx+0x1d26b1 (fffff801`0ba16a51):
+    call to nt!HalPutDmaAdapter (fffff801`0b458220)

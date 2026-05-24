@@ -1,0 +1,5 @@
+nt!NtCreateFile (fffff804`2480b890)
+  nt!NtCreateFile+0x74 (fffff804`2480b904):
+    call to nt!IopCreateFile (fffff804`2480b920)
+
+

@@ -1,0 +1,108 @@
+kd> uf /c nt!iopcreatefile
+nt!IopCreateFile (fffff804`2480b920)
+  nt!FsRtlpPrepareExtraCreateParametersForCreate+0x1e6a86 (fffff804`249f327a):
+    call to nt!KeBugCheckEx (fffff804`245fd5c0)
+  nt!NtQueryFullAttributesFile+0x1e6a29 (fffff804`249f3289):
+    call to nt!ObCloseHandle (fffff804`2481afe0)
+  nt!NtQueryFullAttributesFile+0x236 (fffff804`2480ca96):
+    call to nt!_security_check_cookie (fffff804`245cfd60)
+  nt!IopCreateFile+0x83 (fffff804`2480b9a3):
+    call to nt!ExpInterlockedPopEntrySList (fffff804`24607000)
+  nt!IopCreateFile+0xa5 (fffff804`2480b9c5):
+    call to nt!ExpInterlockedPopEntrySList (fffff804`24607000)
+  nt!IopCreateFile+0xc8 (fffff804`2480b9e8):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0x224 (fffff804`2480bb44):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0x242 (fffff804`2480bb62):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`24607040)
+  nt!IopCreateFile+0x2f6 (fffff804`2480bc16):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0x3c8 (fffff804`2480bce8):
+    call to nt!PsGetCurrentProcess (fffff804`244bbc90)
+  nt!IopCreateFile+0x46f (fffff804`2480bd8f):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0x479 (fffff804`2480bd99):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`24607040)
+  nt!IopCreateFile+0x519 (fffff804`2480be39):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0x523 (fffff804`2480be43):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`24607040)
+  nt!IopCreateFile+0x630 (fffff804`2480bf50):
+    call to nt!ExAllocatePoolWithQuotaTag (fffff804`244d37d0)
+  nt!IopCreateFile+0x646 (fffff804`2480bf66):
+    call to nt!memcpy (fffff804`24613540)
+  nt!IopCreateFile+0x65e (fffff804`2480bf7e):
+    call to nt!IoCheckEaBufferValidity (fffff804`2480cf10)
+  nt!IopCreateFile+0x7b9 (fffff804`2480c0d9):
+    call to nt!PsGetCurrentProcess (fffff804`244bbc90)
+  nt!IopCreateFile+0x895 (fffff804`2480c1b5):
+    call to nt!ExAllocatePoolWithTag (fffff804`24bb4160)
+  nt!IopCreateFile+0x8df (fffff804`2480c1ff):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0x8fd (fffff804`2480c21d):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`24607040)
+  nt!IopCreateFile+0x910 (fffff804`2480c230):
+    call to nt!memcpy (fffff804`24613540)
+  nt!IopCreateFile+0x927 (fffff804`2480c247):
+    call to nt!IoCheckEaBufferValidity (fffff804`2480cf10)
+  nt!IopCreateFile+0x940 (fffff804`2480c260):
+    call to nt!ExFreePool (fffff804`24bb4140)
+  nt!IopCreateFile+0x984 (fffff804`2480c2a4):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0x9a1 (fffff804`2480c2c1):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`24607040)
+  nt!IopCreateFile+0xa9a (fffff804`2480c3ba):
+    call to nt!memcpy (fffff804`24613540)
+  nt!IopCreateFile+0xaa9 (fffff804`2480c3c9):
+    call to nt!PsGetCurrentSilo (fffff804`24545940)
+  nt!IopCreateFile+0xb0c (fffff804`2480c42c):
+    call to nt!ObOpenObjectByNameEx (fffff804`248cea90)
+  nt!IopCreateFile+0xb23 (fffff804`2480c443):
+    call to nt!ExFreePool (fffff804`24bb4140)
+  nt!IopCreateFile+0xbba (fffff804`2480c4da):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0xbe0 (fffff804`2480c500):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0xbfa (fffff804`2480c51a):
+    call to nt!ExFreeToNPagedLookasideList (fffff804`24452644)
+  nt!IopCreateFile+0xc18 (fffff804`2480c538):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0xc23 (fffff804`2480c543):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`24607040)
+  nt!IopCreateFile+0xc30 (fffff804`2480c550):
+    call to nt!ExFreePool (fffff804`24bb4140)
+  nt!IopCreateFile+0xc4c (fffff804`2480c56c):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0xc84 (fffff804`2480c5a4):
+    call to nt!guard_dispatch_icall (fffff804`24607c80)
+  nt!IopCreateFile+0xc95 (fffff804`2480c5b5):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`24607040)
+  nt!IopCreateFile+0xca1 (fffff804`2480c5c1):
+    call to nt!ExFreePool (fffff804`24bb4140)
+  nt!IopCreateFile+0xcfb (fffff804`2480c61b):
+    call to nt!FsRtlFreeExtraCreateParameter (fffff804`2480ce40)
+  nt!IopCreateFile+0xd83 (fffff804`2480c6a3):
+    call to nt!ObCloseHandle (fffff804`2481afe0)
+  nt!IopCreateFile+0xdf7 (fffff804`2480c717):
+    call to nt!ExFreePool (fffff804`24bb4140)
+  nt!IopCreateFile+0xe08 (fffff804`2480c728):
+    call to nt!HalPutDmaAdapter (fffff804`244cb830)
+  nt!IopCreateFile+0xe26 (fffff804`2480c746):
+    call to nt!IopCloseFile (fffff804`2484a140)
+  nt!IopCreateFile+0xe74 (fffff804`2480c794):
+    call to nt!HalPutDmaAdapter (fffff804`244cb830)
+  nt!IopCreateFile+0xe81 (fffff804`2480c7a1):
+    call to nt!ExpInterlockedPushEntrySList (fffff804`24607040)
+  nt!IopCreateFile+0xe9c (fffff804`2480c7bc):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`2497bc10)
+  nt!IopCreateFile+0xea6 (fffff804`2480c7c6):
+    call to nt!RtlRaiseStatus (fffff804`244f1cb0)
+  nt!IopCreateFile+0xeac (fffff804`2480c7cc):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`2497bc10)
+  nt!IopCreateFile+0xeb1 (fffff804`2480c7d1):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`2497bc10)
+  nt!IopCreateFile+0xeb7 (fffff804`2480c7d7):
+    call to nt!ExRaiseDatatypeMisalignment (fffff804`2497bc10)
+  nt!IopCreateFile+0xec5 (fffff804`2480c7e5):
+    call to nt!RtlRaiseStatus (fffff804`244f1cb0)

@@ -1,12 +1,12 @@
 ---
-title: "NtCreateFile, Analyzed Three Times"
+title: "NtCreateFile, Analyzed Three Times — Part 1"
 date: 2026-05-21 10:00:00 +0900
 categories: [Reflections]
 tags: [ntcreatefile, kernel, filter-manager, windbg, reactos, retrospective]
 lang: en
 ---
 
-🇰🇷 [한국어 버전](/posts/ntcreatefile-three-analyses-ko/) ・ 🇺🇸 English (you are here)
+🇰🇷 [한국어 버전](/posts/ntcreatefile-three-analyses-part1-ko/) ・ 🇺🇸 English (you are here)
 
 > **TL;DR**
 > - I analyzed the same `NtCreateFile` at three points in my career — undergraduate, junior, present.

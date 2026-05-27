@@ -1,12 +1,12 @@
 ---
-title: "NtCreateFile, 세 번 분석하기"
+title: "NtCreateFile, 세 번 분석하기 — Part 1"
 date: 2026-05-21 10:00:00 +0900
 categories: [Reflections]
 tags: [ntcreatefile, kernel, filter-manager, windbg, reactos, retrospective]
 lang: ko-KR
 ---
 
-🇰🇷 한국어 (현재) ・ 🇺🇸 [English version](/posts/ntcreatefile-three-analyses-en/)
+🇰🇷 한국어 (현재) ・ 🇺🇸 [English version](/posts/ntcreatefile-three-analyses-part1-en/)
 
 > **3줄 요약**
 > - 같은 `NtCreateFile`을 대학생·주니어·현재 세 시점에 다시 분석했다.

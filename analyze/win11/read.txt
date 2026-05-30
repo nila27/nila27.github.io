@@ -1,0 +1,26 @@
+kd> g
+Breakpoint 0 hit
+nt!CcInitializeCacheMapInternal:
+fffff801`e585d6f0 488bc4          mov     rax,rsp
+kd> k
+ # Child-SP          RetAddr               Call Site
+00 ffffed00`bee9ec48 fffff801`e585d6e3     nt!CcInitializeCacheMapInternal
+01 ffffed00`bee9ec50 fffff801`789c96c7     nt!CcInitializeCacheMapEx2+0x23
+02 ffffed00`bee9eca0 fffff801`789c93fd     Ntfs!NtfsInitializeCacheMap+0x87
+03 ffffed00`bee9ed00 fffff801`789cf1ab     Ntfs!NtfsCachedRead+0x16d
+04 ffffed00`bee9ed70 fffff801`789cccbd     Ntfs!NtfsCommonRead+0x1d9b
+05 ffffed00`bee9eec0 fffff801`e57741fb     Ntfs!NtfsFsdRead+0x26d
+06 ffffed00`bee9f000 fffff801`e5774173     nt!IopfCallDriver+0x5b
+07 ffffed00`bee9f040 fffff801`7703c4ee     nt!IofCallDriver+0x13
+08 ffffed00`bee9f070 fffff801`7704bb60     FLTMGR!FltpLegacyProcessingAfterPreCallbacksCompleted+0x3fe
+09 ffffed00`bee9f0e0 fffff801`e57741fb     FLTMGR!FltpDispatch+0x280
+0a ffffed00`bee9f180 fffff801`e5774173     nt!IopfCallDriver+0x5b
+0b ffffed00`bee9f1c0 fffff801`e5cc34c5     nt!IofCallDriver+0x13
+0c ffffed00`bee9f1f0 fffff801`e5cc0e08     nt!IopSynchronousServiceTail+0x1c5
+0d ffffed00`bee9f2a0 fffff801`e5c4a466     nt!IopReadFile+0x7f8
+0e ffffed00`bee9f3a0 fffff801`e5abe355     nt!NtReadFile+0xe6
+0f ffffed00`bee9f430 00007ffb`4b101b54     nt!KiSystemServiceCopyEnd+0x25
+10 00000035`f316e988 00007ffb`47a71e3d     0x00007ffb`4b101b54
+11 00000035`f316e990 00000000`0000000e     0x00007ffb`47a71e3d
+12 00000035`f316e998 00000000`00000080     0xe
+13 00000035`f316e9a0 00000000`00000000     0x80

@@ -1,0 +1,32 @@
+번외
+
+kd> k
+ # Child-SP          RetAddr               Call Site
+00 ffffed00`c0ba5938 fffff801`76d46479     nt!CcInitializeCacheMap
+01 ffffed00`c0ba5940 fffff801`76d41952     CLFS!CClfsLogFcbPhysical::InitializeCacheMap+0x79
+02 ffffed00`c0ba59b0 fffff801`76dacbe7     CLFS!CClfsLogFcbPhysical::Initialize+0x94a
+03 ffffed00`c0ba5ae0 fffff801`76dac054     CLFS!CClfsRequest::Create+0x553
+04 ffffed00`c0ba5c50 fffff801`76dabcdd     CLFS!CClfsRequest::Dispatch+0xb8
+05 ffffed00`c0ba5ca0 fffff801`76dabc0c     CLFS!ClfsDispatchIoRequest+0x8d
+06 ffffed00`c0ba5cf0 fffff801`e57741fb     CLFS!CClfsDriver::LogIoDispatch+0x3c
+07 ffffed00`c0ba5d20 fffff801`e5774173     nt!IopfCallDriver+0x5b
+08 ffffed00`c0ba5d60 fffff801`e5c9ffbb     nt!IofCallDriver+0x13
+09 ffffed00`c0ba5d90 fffff801`e5c9df92     nt!IopParseDevice+0x73b
+0a ffffed00`c0ba5f40 fffff801`e5c9bd63     nt!ObpLookupObjectName+0xd82
+0b ffffed00`c0ba60f0 fffff801`e5d6dd98     nt!ObOpenObjectByNameEx+0x223
+0c ffffed00`c0ba6230 fffff801`e5d6cbfd     nt!IopCreateFile+0x1038
+0d ffffed00`c0ba6300 fffff801`e5e55a8a     nt!IoCreateFileEx+0x13d
+0e ffffed00`c0ba6390 fffff801`76dade9a     nt!IoCreateFileSpecifyDeviceObjectHint+0xba
+0f ffffed00`c0ba6450 fffff801`e5ee514f     CLFS!ClfsCreateLogFile+0x41a
+10 ffffed00`c0ba6640 fffff801`e58647f2     nt!CmpInitCmRM+0x3bb
+11 ffffed00`c0ba6830 fffff801`e5d2b9d7     nt!CmpLoadKeyCommon+0x37a
+12 ffffed00`c0ba6930 fffff801`e5d2d277     nt!CmLoadKey+0x24f
+13 ffffed00`c0ba6bb0 fffff801`e5d2c744     nt!CmLoadDifferencingKey+0xb27
+14 ffffed00`c0ba7020 fffff801`e5abe355     nt!NtLoadKeyEx+0x64
+15 ffffed00`c0ba70a0 fffff801`e5aac780     nt!KiSystemServiceCopyEnd+0x25
+16 ffffed00`c0ba72a8 fffff801`e5e79766     nt!KiServiceLinkage
+17 ffffed00`c0ba72b0 fffff801`e5e79590     nt!PiDrvDbLoadHive+0x92
+18 ffffed00`c0ba7360 fffff801`e560817b     nt!PiDrvDbLoadNodeWorkerCallback+0x60
+19 ffffed00`c0ba7400 fffff801`e58870ba     nt!ExpWorkerThread+0x4bb
+1a ffffed00`c0ba75b0 fffff801`e5aabdf4     nt!PspSystemThreadStartup+0x5a
+1b ffffed00`c0ba7600 00000000`00000000     nt!KiStartSystemThread+0x34

@@ -1,0 +1,30 @@
+type C:\Windows\System32\drivers\etc\hosts
+
+kd> k
+ # Child-SP          RetAddr               Call Site
+00 ffffed00`c03fec28 fffff801`e57741fb     Ntfs!NtfsFsdCreate
+01 ffffed00`c03fec30 fffff801`e5774173     nt!IopfCallDriver+0x5b
+02 ffffed00`c03fec70 fffff801`7703c4ee     nt!IofCallDriver+0x13
+03 ffffed00`c03feca0 fffff801`770a7966     FLTMGR!FltpLegacyProcessingAfterPreCallbacksCompleted+0x3fe
+04 ffffed00`c03fed10 fffff801`e57741fb     FLTMGR!FltpCreate+0x706
+05 ffffed00`c03fedc0 fffff801`e5774173     nt!IopfCallDriver+0x5b
+06 ffffed00`c03fee00 fffff801`e5c9ffbb     nt!IofCallDriver+0x13
+07 ffffed00`c03fee30 fffff801`e5c9e05a     nt!IopParseDevice+0x73b
+08 ffffed00`c03fefe0 fffff801`e5c9bd63     nt!ObpLookupObjectName+0xe4a
+09 ffffed00`c03ff190 fffff801`e5d6dd98     nt!ObOpenObjectByNameEx+0x223
+0a ffffed00`c03ff2d0 fffff801`e5d6ccb8     nt!IopCreateFile+0x1038
+0b ffffed00`c03ff3a0 fffff801`e5abe355     nt!NtOpenFile+0x58
+0c ffffed00`c03ff430 00007ffb`4b1020f4     nt!KiSystemServiceCopyEnd+0x25
+0d 000000ec`b1d0eef8 00007ffb`47aa0f55     0x00007ffb`4b1020f4
+0e 000000ec`b1d0ef00 000001fb`016a7000     0x00007ffb`47aa0f55
+0f 000000ec`b1d0ef08 000000ec`b1d0f000     0x000001fb`016a7000
+10 000000ec`b1d0ef10 000000ec`b1d0f610     0x000000ec`b1d0f000
+11 000000ec`b1d0ef18 000001fb`016a6fe0     0x000000ec`b1d0f610
+12 000000ec`b1d0ef20 00000000`00000007     0x000001fb`016a6fe0
+13 000000ec`b1d0ef28 00000000`00004021     0x7
+14 000000ec`b1d0ef30 000001fb`016a6ff0     0x4021
+15 000000ec`b1d0ef38 00000000`00000001     0x000001fb`016a6ff0
+16 000000ec`b1d0ef40 000001fb`016a6fe0     0x1
+17 000000ec`b1d0ef48 00007ff7`00000001     0x000001fb`016a6fe0
+18 000000ec`b1d0ef50 00000000`00000000     0x00007ff7`00000001
+

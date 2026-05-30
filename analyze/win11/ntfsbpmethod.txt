@@ -1,0 +1,1 @@
+bp ntfs!NtfsFsdCreate ".if (poi(@$proc + 0x338) & 0xffffffff) == 0x2e646d63 { .echo 'CMD Hit!'; } .else { gc; }"
